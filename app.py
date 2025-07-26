@@ -3,10 +3,12 @@ import streamlit as st
 import numpy as np
 
 # Loading models and data
-model = pickle.load(open('NNeighbours.pkl', 'rb'))
+model = pickle.load(open('NNeighbors.pkl', 'rb'))
+
 book_names = pickle.load(open('bookNames.pkl', 'rb'))
-final_rating = pickle.load(open('final_rating.pkl', 'rb'))
+final_rating = pickle.load(open('finalRating.pkl', 'rb'))
 book_pivot = pickle.load(open('bookPivot.pkl', 'rb'))
+book_names = list(book_pivot.index)  # Assuming bookPivot.index contains book titles
 
 # App title and description
 st.set_page_config(page_title="Book Recommender", layout="wide")
