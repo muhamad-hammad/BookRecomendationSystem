@@ -45,7 +45,7 @@ Get personalized book recommendations based on your favorite reads using a machi
 * **Pickle** – to save/load ML models
 
 ---
-📸 Sample Screenshots
+📸 Sample Screenshot
 ![alt text](image.png)
 ---
 
