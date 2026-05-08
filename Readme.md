@@ -27,11 +27,20 @@ Get personalized book recommendations based on your favorite reads using a machi
 
 ```
 ├── app.py                 # Streamlit frontend
-├── model.pkl              # Trained KNN model (pickled)
-├── book_pivot.pkl         # Pivot table of books vs users
-├── books.csv              # Dataset of books
-├── fetch_posters.py       # Function to retrieve book posters
-├── README.md              # This file
+├── train.py               # Reproducible training script (regenerates the .pkl files)
+├── main.ipynb             # Original training notebook
+├── NNeighbors.pkl         # Trained scikit-learn NearestNeighbors model
+├── bookPivot.pkl          # Title × user_id rating pivot table (used as the KNN feature matrix)
+├── bookNames.pkl          # List of book titles (== bookPivot.index)
+├── finalRating.pkl        # Filtered rating frame with cover URLs (img_url, title, author, …)
+├── Books.csv              # Raw books dataset
+├── Ratings.csv            # Raw ratings dataset
+├── Users.csv              # Raw users dataset
+├── tests/                 # Smoke tests
+├── Dockerfile             # Container image for deployment
+├── .streamlit/config.toml # Streamlit theme + server config
+├── requirements.txt       # Pinned dependencies
+└── Readme.md              # This file
 ```
 
 ---
