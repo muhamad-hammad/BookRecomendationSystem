@@ -1,0 +1,12 @@
+.git
+.gitignore
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+tests/
+main.ipynb
+image.png
+TODO.md
+CLAUDE.md
+_streamlit.log
